@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test de site</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f0f2f5;
+      color: #333;
+    }
+
+    header {
+      background-color: #4f46e5;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #3b3bbd;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 15px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .home {
+      text-align: center;
+    }
+
+    .home img {
+      width: 100%;
+      max-width: 700px;
+      border-radius: 20px;
+      margin-top: 20px;
+      object-fit: cover;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .card-content h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      color: #4f46e5;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .buy-btn {
+      background-color: #4f46e5;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .buy-btn:hover {
+      background-color: #3730a3;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .discord-link img {
+      width: 150px;
+      margin: 20px 0;
+      transition: transform 0.3s;
+    }
+
+    .discord-link img:hover {
+      transform: scale(1.05);
+    }
+
+    .extra-image {
+      width: 100%;
+      max-width: 400px;
+      margin-top: 30px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      object-fit: cover;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #eee;
+      color: #666;
+    }
+
+    .about {
+      text-align: center;
+    }
+
+    .about img {
+      max-width: 500px;
+      width: 100%;
+      margin: 20px auto 0;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Test de site</h1>
+    <p>Bienvenue sur notre boutique fictive</p>
+  </header>
+
+  <nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#produits">Produits</a>
+    <a href="#contact">Contact</a>
+    <a href="#apropos">À propos</a>
+  </nav>
+
+  <section id="accueil" class="home">
+    <h2>Bienvenue sur Test de site</h2>
+    <p>Découvre nos produits incroyables à des prix imaginaires !</p>
+    <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=1000&q=80" alt="Accueil image">
+  </section>
+
+  <section id="produits">
+    <h2 style="text-align:center; margin-bottom: 30px;">Nos produits</h2>
+    <div class="products">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80" alt="Produit 1">
+        <div class="card-content">
+          <h3>Truc Stylé</h3>
+          <p class="price">€29.99</p>
+          <button class="buy-btn">Acheter</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://www.ginko.voyage/fileadmin/ginko/images/jpeg-optimizer__c_jack-varlet-1-avril-810-190__1_.jpeg" alt="Produit 2">
+        <div class="card-content">
+          <h3>Truc Futé</h3>
+          <p class="price">€45.00</p>
+          <button class="buy-btn">Acheter</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Lloyds_Building_stair_case.jpg/640px-Lloyds_Building_stair_case.jpg" alt="Produit 3">
+        <div class="card-content">
+          <h3>Truc High-Tech</h3>
+          <p class="price">€99.90</p>
+          <button class="buy-btn">Acheter</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1593642532973-d31b6557fa68?auto=format&fit=crop&w=800&q=80" alt="Produit 4">
+        <div class="card-content">
+          <h3>Truc Extra</h3>
+          <p class="price">€149.99</p>
+          <button class="buy-btn">Acheter</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Nous contacter</h2>
+    <p>Rejoins notre serveur Discord pour discuter, poser des questions ou juste dire bonjour :</p>
+    <a class="discord-link" href="https://discord.gg/f3cppgw49J" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" alt="Rejoindre notre Discord">
+    </a>
+  </section>
+
+  <section id="apropos" class="about">
+    <h2 style="margin-bottom:20px;">À propos de nous</h2>
+    <p style="max-width:700px; margin:auto;">Nous sommes une équipe imaginaire dédiée à vous vendre des trucs imaginaires sur un site qui n'existe que pour le fun. Mais bon, on fait ça sérieusement quand même 😄</p>
+    <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=800&q=80" alt="Équipe imaginaire">
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Test de site - Ceci est un site fictif pour tester.</p>
+  </footer>
+</body>
+</html>
